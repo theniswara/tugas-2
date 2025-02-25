@@ -7,7 +7,7 @@ public class LatihanArray1 {
         // 4. Menghitung jumlah semua elemen array
 
         int[] bilanganGenap = new int[10];
-        int jumlah = 0;
+        int jumlah = 0; 
 
         // Mengisi array
         for (int i = 0; i < bilanganGenap.length; i++) {
@@ -21,6 +21,6 @@ public class LatihanArray1 {
             jumlah += bilangan;
         }
 
-        System.out.println("\\nJumlah semua elemen: " + jumlah);
+        System.out.println("\nJumlah semua elemen: " + jumlah);
     }
 }
