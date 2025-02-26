@@ -1,6 +1,8 @@
+
+```java
 public class MenentukanDiagonal {
     public static void main(String[] args) {
-   
+        // Matriks persegi 3x3
         int[][] matriks = {
             {1, 2, 3},
             {4, 5, 6},
@@ -19,30 +21,31 @@ public class MenentukanDiagonal {
         printArray(diagonalSamping);
     }
 
-    
+    // Metode untuk mendapatkan diagonal utama
     public static int[] getDiagonalUtama(int[][] matriks) {
         int n = matriks.length;
-        int[] diagonal = new int[n]; 
+        int[] diagonal = new int[n]; // Array untuk menyimpan diagonal utama
+
         for (int i = 0; i < n; i++) {
-            diagonal[i] = matriks[i][i]; 
+            diagonal[i] = matriks[i][i]; // Elemen diagonal utama: matriks[i][i]
         }
 
         return diagonal;
     }
 
-
+    // Metode untuk mendapatkan diagonal samping
     public static int[] getDiagonalSamping(int[][] matriks) {
         int n = matriks.length;
-        int[] diagonal = new int[n]; 
+        int[] diagonal = new int[n]; // Array untuk menyimpan diagonal samping
 
         for (int i = 0; i < n; i++) {
-            diagonal[i] = matriks[i][n - 1 - i]; 
+            diagonal[i] = matriks[i][n - 1 - i]; // Elemen diagonal samping: matriks[i][n-1-i]
         }
 
         return diagonal;
     }
 
- 
+    // Metode untuk mencetak matriks
     public static void printMatriks(int[][] matriks) {
         for (int[] baris : matriks) {
             for (int nilai : baris) {
@@ -52,7 +55,7 @@ public class MenentukanDiagonal {
         }
     }
 
-    
+    // Metode untuk mencetak array
     public static void printArray(int[] array) {
         for (int nilai : array) {
             System.out.print(nilai + " ");
@@ -60,3 +63,4 @@ public class MenentukanDiagonal {
         System.out.println();
     }
 }
+```
